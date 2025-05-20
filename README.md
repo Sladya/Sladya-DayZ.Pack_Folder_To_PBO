@@ -9,8 +9,8 @@
 - В настройках расширения укажите пути
 - Готово
 
-# Настройки
+# Настройки:
 ![Настройки](https://iimg.su/s/18/th_lT3dumOlVxiyOJDIUbmDZuPU2PdcnmT4pPGVYFZH.png)
 
-# Пункты меню
+# Пункты меню:
 ![Меню](https://iimg.su/s/18/th_b86gMxjHJe1zLGNEnV9DpDbrYf8HAXchxBJ15kjk.png)
