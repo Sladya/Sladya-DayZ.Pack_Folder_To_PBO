@@ -3,7 +3,7 @@
   "displayName": "DayZ.Pack Folder To PBO",
   "description": "Упаковка папки в PBO через PBO Manager v.1.4 beta(PBOConsole.exe)",
   "publisher": "Sladya",
-  "version": "v1.0.4",
+  "version": "1.0.4",
   "engines": {
     "vscode": "^1.70.0"
   },

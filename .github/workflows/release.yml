@@ -3,7 +3,7 @@ name: Release VSCode Extension
 on:
   push:
     tags:
-      - 'vv1.0.4'
+      - 'v1.0.4'
 
 permissions:
   contents: write 
