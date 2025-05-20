@@ -1,0 +1,68 @@
+{
+  "name": "pack-to-pbo",
+  "displayName": "DayZ.Pack Folder To PBO",
+  "description": "Упаковка папки в PBO через PBO Manager v.1.4 beta(PBOConsole.exe)",
+  "publisher": "Sladya",
+  "version": "1.0.3",
+  "engines": {
+    "vscode": "^1.84.0"
+  },
+  "main": "./out/extension.js",
+  "activationEvents": [],
+  "scripts": {
+    "compile": "tsc -p ."
+  },
+  "icon": "Pack.png",
+  "contributes": {
+    "commands": [
+      {
+        "command": "pack-to-pbo.packClient",
+        "title": "Запаковать PBO в Client"
+      },
+      {
+        "command": "pack-to-pbo.packServer",
+        "title": "Запаковать PBO в Server"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "pack-to-pbo.packClient",
+          "when": "resourceScheme == 'file'",
+          "group": "navigation"
+        },
+        {
+          "command": "pack-to-pbo.packServer",
+          "when": "resourceScheme == 'file'",
+          "group": "navigation"
+        }
+      ]
+    },
+    "configuration": {
+      "type": "object",
+      "title": "Pack PBO Settings",
+      "properties": {
+        "pack-to-pbo.pboManagerPath": {
+          "type": "string",
+          "default": "",
+          "description": "Путь к PBOConsole.exe"
+        },
+        "pack-to-pbo.pboOutputClientFolder": {
+          "type": "string",
+          "default": "",
+          "description": "Папка,куда паковать PBO клиента"
+        },
+        "pack-to-pbo.pboOutputServerFolder": {
+          "type": "string",
+          "default": "",
+          "description": "Папка,куда паковать PBO сервера"
+        }
+      }
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.18",
+    "@types/vscode": "^1.84.0",
+    "vscode": "^1.1.37"
+  }
+}
