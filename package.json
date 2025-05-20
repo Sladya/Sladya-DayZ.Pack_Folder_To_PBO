@@ -7,6 +7,10 @@
   "engines": {
     "vscode": "^1.84.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sladya/Sladya-DayZ.Pack_Folder_To_PBO.git"
+  },
   "main": "./out/extension.js",
   "activationEvents": [],
   "scripts": {
